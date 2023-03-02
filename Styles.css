@@ -1,0 +1,260 @@
+h1{
+    color:aqua
+}
+h2{
+    color:blue
+}
+h3{
+    color:darkgreen
+}
+h4{
+    color:red
+}
+h5{
+    color:fuchsia
+}
+h6{
+    color:olive
+}
+button{
+    color:black;
+    background-color: #D91512;
+} 
+.publish h3{ 
+    color: rosybrown;
+} 
+.header{   /* ES PARA EL TITULO CAMBIAR DE POSICION */
+    margin-top: 1px; 
+    margin-left: 100px;
+    margin-right: 20px;
+    font-size: 0;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.header > * { /* *LLAMA TODO LOS ELEMENTOS QUE ESTAN DENTRO DE LA CLASE, ES PARA CENTRAR O CAMBIAR LA POSICION  */
+    display: inline-block;   
+    font-size: 16px;  
+    height: 100%;  /*ALTURA*/
+    vertical-align: middle;  /*SE MUEVE A LA MITAD*/
+    line-height: 45px;  /*MARGEN*/
+}
+
+li{   /*LLAMA A LA ETIQUETA*/
+    display: inline;  /*MUETRA UN ELEMENTO A LADO DE OTRO*/
+}
+
+.logo{
+    height: 100%;  /*ALTURA ANCHO DEL LOGO*/
+}
+
+.navbar{
+    text-align: left;
+    color: rgb(0, 0, 0);  /*COLOR DEL TITULO DE BARRA DE NAVEGACION */
+    font-weight: 500;
+    /* background-color: #9c2452; */  /*PARA PONER EN COLOR TODA LA BARRA*/
+    
+}
+
+.actions{  /*BOTAN*/
+    text-align: left;
+    font-size: 14px;
+}
+
+.actions > * {
+    margin-left: 15px;
+    margin-right: 15px;
+     /*LINK*/
+}
+
+
+.publish h3{
+    color: #9c2452;
+    justify-content: flex-end;
+}
+
+.video{ 
+    display: flex;
+    width: 75%;
+    margin-left: 50px;
+    margin-top: 25PX;
+    margin-bottom: 50PX;
+    
+}
+
+.features{
+    background-color: rgba(102, 51, 153, 0.685);
+    display: grid; /* ADAPTAR A LAS IMAGENES */
+    padding: 5% 11%; /* SEPARACION ENTRE ELLOS. SE MUEVEN MAS AL CENTRO */
+    grid-template-columns: repeat(2, 1000px); /* NUEMERO DE LAS COLUNAS DE LOS CUADROS QUE SE VAN A PONER Y TAMAÑO*/
+    grid-template-rows: repeat(2, 500px);  
+}
+
+/* article{
+    background-color: rgb(31, 181, 131);
+    margin: 10px;
+    width: 40%;
+    height: 50px;
+} */
+
+.features .feature-card {
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 15px;
+    background-color: #fff;
+    border: 5px solid #D91512;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.features .feature-card .feature-content{
+    padding: 20px 10px 30px 30px;  /* ESPACIO QUE SE TIENE ENTRE LAS ORILLAS */
+    flex: 2;
+}
+
+.features .feature-card .feature-content > * { 
+    margin-bottom: 1rem;
+}
+
+.features .feature-card .feature-content img{ /* TAMAÑO DEL ICONO */
+    width: 50px;
+}
+
+.features .feature-card .feature-content h3{ /*LETRA TAMAÑO Y COLOR DEL TITULO*/
+    font-size: 30px;
+    color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.features .feature-card .feature-content p{  /*LETRA TAMAÑO Y COLOR DEL DEL PARRAFO*/
+    font-size: 16px;
+    color: rgb(127, 255, 8);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.features .feature-card .feature-content a{ /* LETRA TAMAÑO Y COLOR DEL LINK*/
+font-size: 17px;
+color: deeppink;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.features .feature-card .feacture-image { 
+flex: 1;
+width: 50%;
+position: relative;
+right: 1100px;   /* es para mover la imagen */
+height: 0%;
+}
+
+.features .feature-card .feacture-image figure,
+    .features .feature-card .feacture-image img{
+    margin-top: 0;
+    height: 100;
+
+}
+
+/** dispositivos pequeños en vista landscape (horizontal) */
+@media (min-width: 576px) and (max-width: 767px) {
+   
+}
+
+/** dispositivos medianos (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+  
+}
+
+/** dispositivos grandes (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  
+}
+
+/** dispositivos extra grandes (monitores grandes, tvs) */
+@media (min-width: 1200px) {
+  
+}
+.por{
+    background-color: #36e344;
+    display: grid;
+    padding: 5% 5%;
+    grid-template-columns: repeat(2, 600px); /* se agregan 2 columnas*/
+    grid-template-rows: repeat(1, 500px);
+}
+
+
+/* TAREA*/
+h1{
+    color:#D91512
+}
+
+
+
+
+
+
+/* EXAMEN*/
+
+.tec{
+    background-color: rgba(0, 255, 255, 0.336);
+    
+}
+.tec.t h2{
+    justify-content: center;
+    
+}
+.tec.t p{
+    justify-content: center;
+    
+}
+.tec.t button{
+    justify-content: center;
+}
+
+.tec .Carreras{
+    background-color: #2ec3ce;
+    display: grid;
+    padding: 5% 11%;
+    grid-template-columns: repeat(4, 550px); /* se agregan 2 columnas de 300px*/
+    grid-template-rows: repeat(4, 300px);
+}
+.tec .Carreras .tec-card {
+    margin-bottom: 1px;
+    margin-left: 300px;
+    margin-right: 50px;
+    background-color: #fff;
+    border: 2px solid #D91512;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.tec .tec-card .tec-content{
+    padding: 20px 10px 30px 3px;
+    flex: 4;
+}
+
+.tec .Carreras .tec-card .tec-content h3{
+    font-size: 30px;
+    font-weight: 100;
+    color: rgba(223, 5, 59, 0.336);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tec .tec-card .tec-content p{
+    font-size: 16px;
+    color: rgb(5, 5, 17);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tec .tec-card .tec-content a{
+font-size: 17px;
+color: deeppink;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.tec .tec-card tec-image {
+flex: 1;
+width: 40%;
+position: relative;
+right: -10px;
+height: 80%;
+}
