@@ -1,4 +1,3 @@
-</ul>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,257 +5,296 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practica 1</title>
-    <link rel="stylesheet" href="Styles.css"> <!--LLAMAR HOJA DE ESTILO-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">  <!--llama a la hoja de estilos-->
 </head>
 
-<body>  <!--TODO VA DENTRO HEADER ES PARA LA BORRA DE NAVEGACION-->
+<body>
+    <nav class="navbar navbar-expand-sm bg-danger navbar-dark">
     <header class="header">
-        <!-- Logo con link a la página principal -->
-        <a>
-          <img class="logo" src="https://pbs.twimg.com/profile_images/904092359469686784/ZjYDv6ZH_400x400.jpg" width="300px" height="300px"/>
+        <!--Logo con link a la pagina principal-->
+        <a class="navbar-brand">
+            <img class="logo" src="C:\Users\gabriel\Documents\Practica\practica1\Img\Estrellas.jpg" width="150px" height="10px"/>
+            <!--Menu de navegacion-->
         </a>
-        <!-- Menú de navegación -->
-        <nav class="navbar">
-            <ul>
-                <li>Pagina</li>
-                <li>Botos</li>
-                <li>Tejana</li>
-                <li>Camisas</li>
-                <li>Sintos</li>  
+        <div class="navbar">
+            <ul> <!--Contenedor de la lista, li es para poner un punto antes -->
+                <li>TEJANA</li>
+                <li>BOTAS</li>
+                <li>CAMISAS</li>
+                <li>CINTOS</li>
             </ul>
-        </nav>
-        <!-- Contenedor de acciones de usuario -->
+        </div>
+        
+        <!--Contenedor de acciones de usuario-->
         <div class="actions">
             <a>Sign In</a>
-            <button>Start free trial</button>
-      </div>
-      </header>
+            <button class="btn btn-dark">VER ARTICULOS</button>
+        </div>
 
-    <h1> Mi Primer Pagina Este Semestre </h1>
+    </header>
+    </nav>
+
+    <h1>Mi Primer Pagina Este Semestre</h1> <!--Este es un comentario, esto sirve para poner titulos-->
     <h2>Heading level 2</h2>
     <h3>Heading level 3</h3>
     <h4>Heading level 4</h4>
     <h5>Heading level 5</h5>
-    <h6>Heading level 6</h6>  <!-- Este es un comentario -->
+    <h6>Heading level 6</h6>
 
     <p>Este es un parrafo</p>
     <p>Este es un parrafo</p>
     <p>Este es un parrafo</p>
     <p>Este es un parrafo</p>
-    <form>
-        <label for="name">Nombre</label>
-        <input type="text" id="name" name="fname" placeholder="Nombre"><br><br>
-        <label>Apellido</label>
-        <input type="text" id="lastname" name="lastname" placeholder="Apellido"><br><br>
-        <label>Edad</label>
-        <input type="number" id="age" name="age" placeholder="Edad" min="18" max="35"><br><br>
-        <label>Email</label>
-        <input type="email" id="email" name="email" placeholder="Correo"><br><br>
-        <label>Contraseña</label>
-        <input type="password" id="password" name="password" placeholder="Contraseña"><br><br> <!--<br><br> ES PARA SALTAR  -->
 
-        <button></button>
-        <button type="submit">Enviar</button>
+    <article class="publish">
+    <form action=""> <!--Este es formulario-->
+    <label for="name">Nombre</label>
+    <input type="text" id="name" name="frame" placeholder="Nombre"><br><br>
+    <label for="name">Apellido</label>
+    <input type="text" id="lastname" lastname="frame"placeholder="Apellido"><br><br>
+    <label for="name">Edad</label>
+    <input type="number" id="number" number="frame" placeholder="Edad"><br><br>
+    <label for="name">Correo</label>
+    <input type="email" id="email" email="frame"placeholder="Correo"><br><br>
+    <label for="name">Contraseña</label>
+    <input type="password"><br><br>
+    <button type="submit">Enviar</button>
+
     </form>
-    <img src="C:\Users\gabriel\Documents\Practica\practica1\Img\Estrellas.jpg" alt="" height="200px" width="200px">
+    </article>
+<img src="C:\Users\gabriel\Documents\Practica\practica1\Img\Estrellas.jpg" alt="" height="200px" width="250px">
 
-    <section class="video">
-        <iframe width="500" height="400" src="https://www.youtube.com/embed/rcZqCkFyrQs" title="El De La Guitarra - Botas Ariat [Official Video]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<section class="video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rcZqCkFyrQs" title="El De La Guitarra - Botas Ariat [Official Video]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-       Ç
-        <article class="publish">
-            <h3>
-                Publish your blog in minutes
-            </h3>
-            <p>
-                MY BLOG ESTEFANIA VIVEROS AMBRIZ
-            </p>
-            <form action="">
-                <p>Start publishing today:</p>
-                <div>
-                    <input type="text" placeholder="Enter email">
-                    <button>Start</button>
-                </div>
-            </form>
-        </article>
-    </section>
+    <article class="publish">
+        <h3>
+           
+        </h3>
+        <p>
+           ESTEFANIA VIVEROS AMBRIZ
+            
+        </p>
+        <form action="">
+            <p> </p>
+            <div>
+                <input type="text" placeholder="Enter email">
+                <button>Start</button>
+            </div>
+        </form>
+        
+    </article>
+</section>
 
-    <section class="features">
-        <article class="feature-card">
-            <div class="feature-content">
-                <figure>
-                    <img src="" alt="">
-                </figure>
-            <h3>TEJANA</h3>
-            <p>
-                Este es un parrafo
-            </p>
-            <a href="">Publica instantaneamente</a>
-        </div>
-        <div class="feature-image">
+<section class="features">
+    <article class="feature-card">
+        <div class="feature-content">
             <figure>
-                <img src="file:///C:/Users/gabriel/Documents/Practica/practica1/Img/Tejana.webp" alt="">
+                <img src="C:\Users\gabriel\Documents\Practica\practica1\Img\Estrellas.jpg" alt="">
             </figure>
-        </div>
-        </article>
-       <article class="feature-card">
-            <div class="feature-content">
-                <figure>
-                    <img src="" alt="">
-                </figure>
-            <h3>CAMISAS</h3>
+        
+        <h3>TEJANA</h3>
+        <p>
+            Este es un parrafo 
+        </p>
+        <a href="">LINK</a>
+    </div>
+    <div class="feature-image">
+        <figure>
+            <img src="file:///C:/Users/gabriel/Documents/Practica/practica1/Img/Tejana.webp" alt="">
+        </figure>
+
+
+    </div>
+    </article>
+
+    <article class="feature-card">
+        <div class="feature-content">
+            <figure>
+                <img src="C:\Users\gabriel\Documents\Practica\practica1\Img\Estrellas.jpg" alt="">
+            </figure>
+        
+        <h3>CAMISAS</h3>
+        <p>
+            Este es un parrafo 
+        </p>
+        <a href="">LINK</a>
+    </div>
+    <div class="feature-image">
+        <figure>
+            <img src="file:///C:/Users/gabriel/Documents/Practica/practica1/Img/Camisas.webp" alt="">
+        </figure>
+
+
+    </div>
+    </article>
+
+   <article class="feature-card">
+        <div class="feature-content">
+            <figure>
+                <img src="C:\Users\gabriel\Documents\Practica\practica1\Img\Estrellas.jpg" alt="">
+            </figure>
+        
+        <h3>BOTAS</h3>
+        <p>
+            Este es un parrafo  
+        </p>
+        <a href="">LINK</a>
+    </div>
+    <div class="feature-image">
+        <figure>
+            <img src="file:///C:/Users/gabriel/Documents/Practica/practica1/Img/Botas.webp" alt="">
+        </figure>
+
+
+    </div>
+    </article>
+
+    <article class="feature-card">
+        <div class="feature-content">
+            <figure>
+                <img src="C:\Users\gabriel\Documents\Practica\practica1\Img\Estrellas.jpg" alt="">
+            </figure>
+        
+        <h3>CINTOS</h3>
+        <p>
+            Este es un parrafo 
+        </p>
+        <a href="">LINK</a>
+    </div>
+    <div class="feature-image">
+        <figure>
+            <img src="ÇCintos.jpg" alt="">
+        </figure>
+
+
+    </div>
+    </article>
+
+</section>
+
+<section class="tarea">
+    <article class="parrafo">
+        <h1>ESTEFANIA VIVEROS AMBRIZ</h1>
+        <h1>QUE ES APPLE??</h1>
+        <p>
+            Apple es una prominente empresa de hardware y software conocida por su serie 
+            de computadoras personales, el iPod y sus innovadoras estrategias de marketing para sus productos.
+            Introducida en 1984, la Macintosh fue la primera computadora personal que se vendía con una 
+            interfaz gráfica de usuario (GUI). 
+        </p>
+        <button>VER MAS</button><br><br>
+
+        <img src="file:///C:/Users/gabriel/Documents/Practica/practica1/Img/evolucio-logotipo-de-apple.webp" alt="" height="200px" width="200px" >
+    </article>
+
+    <article class="anuncio">
+        <div class="feature-anuncio">
+            <figure class="feature-figures">
+                <img src="C:\Users\gabriel\Documents\Practica\practica1\Img\Steve_Jobs_Headshot_2010-CROP_(cropped_2).jpg" alt="">
+            </figure>
+            <h3>Este es el anuncio</h3>
             <p>
-                Este es un parrafo
+                Hablar de los creadores de Apple, es hablar de Steve Wozniak y Steve Job. Steve Wozniak, 
+                el mago de Woz, como le gustaba ser llamado, nació en 1950, y a los 13 años, antes de estudiar 
+                computación en Berkeley, ya había creado su propia máquina de sumar y restar.
             </p>
-            <a href=>Publica instantaneamente</a>
+            <button>VER MAS</button>
         </div>
-        <div class="feature-image">
-            <figure>
-                <img src="https://img.ltwebstatic.com/images2_pi/2018/06/07/15283537003575726667_thumbnail_600x799.webp" alt="">
-            </figure>
-        </div>
-        </article>
 
-        <article class="feature-card">
-            <div class="feature-content">
-                <figure>
-                    <img src="" alt="">
-                </figure>
-            <h3>BOTAS</h3>
-            <p>
-                Este es un parrafo
-            </p>
-            <a href="">Publica instantaneamente</a>
-        </div>
-        <div class="feature-image">
-            <figure>
-                <img src="https://cdn.shopify.com/s/files/1/1416/8872/products/botines-charros-quincy-de-gamuza-con-punta-cuadrada-cafequincy-boots-628952_512x512.jpg?v=1672702037" alt="">
-            </figure>
-        </div>
-        </article>
 
-        <article class="feature-card">
-            <div class="feature-content">
-                <figure>
-                    <img src="" alt="">
-                </figure>
-            <h3>CINTOS</h3>
-            <p>
-                Este es un parrafo
-            </p>
-            <a href="">Publica instantaneamente</a>
-        </div>
-        <div class="feature-image">
-            <figure>
-                <img src="C:\Users\gabriel\Documents\Practica\practica1\Img\Cintos.jpg" alt="">
-            </figure>
-        </div>
-        </article>
+    </article>
 
-    </section>
-
-<!-- TAREA -->
-
-    <section  class="TAREA">
-        <article class="TAREA">
-            <h1> ESTEFANIA VIVEROS AMBRIZ </h1>
-            <p>HOLA A TODOS !!!!
-        ME DICEN LA FANNYA SOY DE PANINDICUARO MICHOACAN
-        TENGO LA EDAD DE 21 AÑOS ACTUALMENTE ESTOY CUERSONDO 
-        UNA INGENIERIA EN TICS.
-            </p>
+</section>
 
 
 
 
+<section class="examen">
+    <article class="examen-features">
+        <h1>INSTITUTO TECNOLOGICO DE PURUANDIRO</h1>
+        <p>SOMOS EL PRESENTE Y EL FUTURO</p>
+        <button>VER MAS</button>
 
+    </article>
+</section>
 
-
-
-
-<!-- EXAMEN  -->
-
-    <section  class="tec">
-    <article class="t">
-        <Center> <h2> INSTITUTO TECNOLOGICO SUPERIOR DE PURUANDIRO </h2>
-    <p>Somos el presente y somos el futuro</p>
-    <button></button>
-    <button type="submit">Registar</button></Center>
-</form>
-</article>
-<div class ="Carreras">
-    <article class="tec-card">
-        <div class="tec-content">
-            <figure>
-                <img src="https://www.tecpuruandiro.edu.mx/Administracion/img/Logo_TICs.png" alt="">
-            </figure>
+<section class="feature">
+<article class="feature-cards">
+    <div class="feature-contents">
+        <figure class="feature-figure">
+            <img src="https://www.tecpuruandiro.edu.mx/Administracion/img/Logo_TICs.png" alt="">
+        </figure>
         <h3>Ingeniería en Tecnologia de la Información y Comunicaciones</h3>
         <p>
-            Objetivo:
-         Formar seres humanos profesionales capaces de integrar y administrar tecnologías de la información y comunicaciones, que contribuyan a la productividad y el logro de los objetivos estratégicos de las organizaciones; caracterizándose por ser líderes, críticos, competentes, éticos, con visión integral, comprometidos con el desarrollo sustentable y respeto al entorno.
+            Formar seres humanos profesionales capaces de integrar y administrar 
+            tecnologías de la información y comunicaciones, que contribuyan a la 
+            productividad y el logro de los objetivos estratégicos de las organizaciones; caracterizándose por ser líderes, críticos, competentes, éticos, con visión integral, comprometidos con el desarrollo sustentable y respeto al entorno.
         </p>
-        <a href="">https://www.tecpuruandiro.edu.mx/Academico/TICs.html </a>
-    </article>
+        <a href="">https://www.tecpuruandiro.edu.mx/Academico/TICs.html</a>
     </div>
 
-    <article class="tec-card">
-    </article>
-    <article class="tec-card">
-    </article>
-    <article class="tec-card">
-    </article>
+</article>
+
+<article class="feature-cards">
+    <div class="feature-contents">
+        <figure class="feature-figure">
+            <img src="https://www.tecpuruandiro.edu.mx/Administracion/img/Logo_IGE.png" alt=" alt="">
+        </figure>
+        <h3>ingeniero en gestión empresarial</h3>
+        <p>
+            Objetivo Estará formado integralmente en gestión e innovación de negocios, 
+            diseño de proyectos, implementación y desarrollo de sistemas estratégicos de 
+            negocios, optimizando recursos en un entorno global, con ética y responsabilidad social.
+        </p>
+        <a href="">https://www.tecpuruandiro.edu.mx/Academico/IGE.html</a>
     </div>
-    </section>
 
-    <section class="tec">
-            <article class="tec-card">
-                <div class="tec-content">
-                    <figure>
-                        <img src="https://www.tecpuruandiro.edu.mx/Administracion/img/Logo_IGE.png" alt="">
-                    </figure>
-                <h3>ingeniero en gestión empresarial </h3>
-                <p>
-                    Objetivo Estará formado integralmente en gestión e innovación de negocios, diseño de proyectos, implementación y desarrollo de sistemas estratégicos de negocios, optimizando recursos en un entorno global, con ética y responsabilidad social.
-                </p>
-                <a href="">https://www.tecpuruandiro.edu.mx/Academico/IGE.html </a>
-            </div>
-                </figure>
-            </article>
-            
+</article>
 
- <section class="tec">
-                <article class="tec-card">
-                    <div class="tec-content">
-                        <figure>
-                            <img src="https://www.tecpuruandiro.edu.mx/Administracion/img/Logo_IMEC.png" alt="">
-                        </figure>
-                    <h3>Ingeniería Mecánica</h3>
-                    <p>
-                        Objetivo
-Formar profesionales con actitud innovadora y capacidad emprendedora para desarrollar, investigar y aplicar conocimientos científicos y tecnológicos en áreas de la Ingeniería Mecánica, como: energía, fluidos, diseño, manufactura, automatización, control, materiales, montaje y mantenimiento de equipo, entre otras; apto para asignar, utilizar y administrar los recursos humanos y materiales en forma segura, racional, eficiente y sustentable; con disposición creativa y emprendedora; con fundamentos éticos y comprometido en todo momento a contribuir al bienestar de la sociedad.
-                    </p>
-                    <a href="">https://www.tecpuruandiro.edu.mx/Academico/IMCA.html </a>
-                </figure>
-                </article>
-                </div>
+<article class="feature-cards">
+    <div class="feature-contents">
+        <figure class="feature-figure">
+            <img src="https://www.tecpuruandiro.edu.mx/Administracion/img/Logo_IMEC.png" alt=" alt="">
+        </figure>
+        <h3>Ingeniería Mecánica</h3>
+        <p>
+            Formar profesionales con actitud innovadora y capacidad emprendedora para desarrollar, investigar y aplicar 
+            conocimientos científicos y tecnológicos en áreas de la Ingeniería Mecánica, como: energía, fluidos, diseño,
+             manufactura, automatización, control, materiales, montaje y mantenimiento de equipo, entre otras; apto para 
+             asignar, utilizar y administrar los recursos humanos y materiales en forma segura, racional, eficiente y 
+             sustentable; con disposición creativa y emprendedora; con fundamentos éticos y comprometido en todo momento 
+             a contribuir al bienestar de la sociedad.
+        </p>
+        <a href="">https://www.tecpuruandiro.edu.mx/Academico/IMCA.html</a>
+    </div>
+
+</article>
+
+<article class="feature-cards">
+    <div class="feature-contents">
+        <figure class="feature-figure">
+            <img src="https://www.tecpuruandiro.edu.mx/Administracion/img/Logo_IDC.png" alt" alt="">
+        </figure>
+        <h3>Ingeniería en Desarrollo Comunitario</h3>
+        <p>
+            Objetivo Formar ingenieros en desarrollo comunitario basados en competencias profesionales para la planeación, 
+            gestión, ejecución y evaluación de proyectos comunitarios, promoviendo el diálogo intercultural entre la compleja
+             diversidad de las relaciones sociales, políticas y culturales, favoreciendo los procesos de vinculación comunitaria 
+             y el manejo sustentable de los recursos naturales.
+        
+        </p>
+        <a href="">https://www.tecpuruandiro.edu.mx/Academico/IDC.html</a>
+    </div>
+
+</article>
 
 
 
-                 <section class="tec">
-                <article class="tec-card">
-                    <div class="tec-content">
-                        <figure>
-                            <img src="https://www.tecpuruandiro.edu.mx/Administracion/img/Logo_IDC.png" alt="">
-                        </figure>
-                    <h3>Ingeniería en Desarrollo Comunitario</h3>
-                    <p>
-                       Objetivo Formar ingenieros en desarrollo comunitario basados en competencias profesionales para la planeación, gestión, ejecución y evaluación de proyectos comunitarios, promoviendo el diálogo intercultural entre la compleja diversidad de las relaciones sociales, políticas y culturales, favoreciendo los procesos de vinculación comunitaria y el manejo sustentable de los recursos naturales.
-                    </p>
-                    <a href="">https://www.tecpuruandiro.edu.mx/Academico/IDC.html </a>
-                </figure>
-                </article>
-                </div>
-    
- 
+
+</section>
+
+
 </body>
 </html>
