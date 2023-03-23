@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camisas </title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">  <!--llama a la hoja de estilos-->
+    <Script src="js/bootstrap.bundle.min.js"> </Script>
+
+    <!--COLOR AL PARRAFO-->
+    <Script>
+        function color() {
+            document.getElementById("Nombre").style.backgroundColor="blue" ;          
+            document.getElementById("Nombre").style.color= "red"
+            document.getElementById("Nombre").style.fontSize="100px"
+        }
+    </Script>
+    <script>
+        function cambiarImg(imagen){
+        document.getElementById(imagen).src="C:\Users\gabriel\Documents\Practica\practica1\Img\Estrellas.jpg";
+    }  </script>
+
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+
+<script type="text/javascript">
+    function sendEmail() {
+        Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "Fannyviveros82@gmail.com",
+                Password: "B3B72F1621D6133F37CC0515F7EC00450E63",
+                To: 'Fannyviveros82@gmail.com',
+                From: "Fannyviveros82@gmail.com",
+                Subject: "Sending Email ",
+                Body: "Well that was easy!!",
+            })
+            .then(function (message) {
+                alert("mail sent successfully")
+            });
+    }
+</script>
+</head>
+<body>
+   <!-- nav justify-content-center navbar navbar-expand-sm bg-danger navbar-dark -->
+   <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="logo" src="C:\Users\gabriel\Documents\Practica\practica1\Img\Estrellas.jpg" width="100px" height="100px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+                
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tejana.html">Fanny</a>
+                
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Camisas.html">Camisas</a>
+                
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" href="">Cintos</a>
+                
+              </li>   
+              <li class="nav-item">
+                <a class="nav-link" href=""><button>VER ARTICULOS</button></a>
+
+              </li> 
+            </ul>
+          </div>
+
+        </div>
+      </nav>
+
+      <br></br>
+      <br></br>
+      <br></br>
+      
+     <!--COLOR AL PARRAFO DONDO CLIK AL BOTON -->
+    <div>
+    <p id="Nombre">CAMISAS BONITAS</p>
+    <button type="button" onclick="color()">clik aqui</button>
+    <br></br>
+    <button onclick ="alert('se rabaron tus datos')">no agas clik aqui</button>
+    </div>
+
+    <!--IMAGENES-->
+    <div id="imagen">
+        <img id="I1" src="file:///C:/Users/gabriel/Documents/Practica/practica1/Img/164741627968cbb2eced5e5673018a97e178b048df_thumbnail_600x.webp" alt="" width="200" height="200" onmouseover="cambiarImg('I1')" onmouseout="this.src='file:///C:/Users/gabriel/Documents/Practica/practica1/Img/164741627968cbb2eced5e5673018a97e178b048df_thumbnail_600x.webp'" >
+        <img id="I2" src="file:///C:/Users/gabriel/Documents/Practica/practica1/Img/1630314761b210337470f1681fb8ed4ae297ced189_thumbnail_600x.webp" alt="" width="200" height="200">
+        <img id="I3" src="file:///C:/Users/gabriel/Documents/Practica/practica1/Img/1646645247e1be493978faa2e138abc9c1e067d5fb_thumbnail_600x.webp" alt="" width="200" height="200">
+    </div>
+
+</body>
+    </html>

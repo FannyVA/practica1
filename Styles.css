@@ -253,8 +253,8 @@ h1{
  
  @media (max-width:575px){
  
-     .navbar, .actions{
-         display: none;
+     /*  .navbar, .actions{
+         display: none; */
      }
      h1{
          font-size: 30px;
@@ -282,7 +282,7 @@ h1{
     
      
      
- }
+ 
  
  /** dispositivos pequeños en vista landscape (horizontal) */
  @media (min-width: 576px) and (max-width: 767px) {
